@@ -15,6 +15,7 @@ public class MD5Test {
 	
 	public static void test_1(){
 		try {
+			
 //			String url = "http://www.wanjiadr.com/daren/qj/callback?key=value1&channelId=value2&idfa=value3&mac=value4";
 			String param = "sercret=8O3F4ADJ600FQCA6D911G41DC38A4H5Lpartner=ZL999IOSAPI&timestamp=1467772620&uid=13597&msg=2Ôªºì°ü&code=G14695243758131431";
 			String sign = MD5Util.textToMD5L32(URLEncoder.encode(param, "UTF-8"));
