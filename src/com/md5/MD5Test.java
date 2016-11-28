@@ -11,18 +11,19 @@ public class MD5Test {
 	public static void main(String[] args) {
 		String result = md5Encode();
 		System.out.println(result);
+//		test_1();
 	}
 	
 	public static void test_1(){
 		try {
 			
-//			String url = "http://www.wanjiadr.com/daren/qj/callback?key=value1&channelId=value2&idfa=value3&mac=value4";
-			String param = "sercret=8O3F4ADJ600FQCA6D911G41DC38A4H5Lpartner=ZL999IOSAPI&timestamp=1467772620&uid=13597&msg=2元红包&code=G14695243758131431";
-			String sign = MD5Util.textToMD5L32(URLEncoder.encode(param, "UTF-8"));
-			System.out.println(sign);//522ec2ac68a2527da775b178a66f309b d6d438863f4f7e9a8663b9f3f1f8ed64
-			System.out.println("aaa");
+			String url = "http://www.wanjiadr.com/daren/qj/callback?key=value1&channelId=value2&idfa=value3&mac=value4";
+//			String param = "sercret=8O3F4ADJ600FQCA6D911G41DC38A4H5Lpartner=ZL999IOSAPI&timestamp=1467772620&uid=13597&msg=2元红包&code=G14695243758131431";
+//			String sign = MD5Util.textToMD5L32(URLEncoder.encode(param, "UTF-8"));
+//			System.out.println(sign);522ec2ac68a2527da775b178a66f309b d6d438863f4f7e9a8663b9f3f1f8ed64
+//			System.out.println("aaa");
 //			String url = "http://localhost/index.php/yungouapi/index/upload_award_info?partner=ZL999IOSAPI&sign=33a92c386f6ad136cb5fd3f41ada2fba&timestamp=1467772620&uid=13597&msg=1元红包&code=G14695243758131431";
-//			System.out.println(URLEncoder.encode(url, "UTF-8"));
+			System.out.println(URLEncoder.encode(url, "UTF-8"));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -45,6 +46,7 @@ public class MD5Test {
 		map.put("name", "你好");
 		map.put("idfa", "IDFA_VALUE");
 		map.put("source", "SOURCE_VALUE");
+		map.put("callback_url","http%3A%2F%2Fwww.wanjiadr.com%2Fdaren%2Fqj%2Fcallback%3Fkey%3Dvalue1%26channelId%3Dvalue2%26idfa%3Dvalue3%26mac%3Dvalue4");
 		
         try {
 			MessageDigest md5=MessageDigest.getInstance("MD5");
