@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!ELEMENT website (name, copyright)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT copyright (#PCDATA)>
+<!ENTITY % name "程序员之家">
+<!ENTITY right "copyright ©2008, %name;.cn, ALL Right Reserved">
