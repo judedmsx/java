@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<person>
+	<address country="China">
+		<city>Beijing</city>
+		<state>Beijing</state>
+		<street>ShangDi West</street>
+		<zipcode>100080</zipcode>
+	</address>
+	<birthDay>2016-11-29T16:08:19.021+08:00</birthDay>
+	<gender>MALE</gender>
+	<job>SW</job>
+	<name>JAXB2</name>
+</person>
