@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE note SYSTEM "note.dtd"> -->
+<!-- <!DOCTYPE note[
+	<!ELEMENT note (message*)>
+	<!ELEMENT message (#PCDATA)>
+]> -->
+<!-- <!DOCTYPE note[
+	<!ELEMENT note (to,from,heading,body,(message|body))>
+	<!ELEMENT to (#PCDATA)>
+	<!ELEMENT from (#PCDATA)>
+	<!ELEMENT heading (#PCDATA)>
+	<!ELEMENT body (#PCDATA)>
+]> -->
+<!-- <note>
+	
+	<to>George</to>
+	<from>John</from>
+	<heading>Reminder</heading>
+	<body>Don't forget the meeting!</body>
+	<message>1</message>
+	<body>s</body>
+</note> -->
+<!DOCTYPE NOTE[
+	<!ELEMENT note (square*)>
+	<!ELEMENT square (#PCDATA)>
+	<!ATTLIST square width CDATA #REQUIRED> 
+	<!ATTLIST square height CDATA #IMPLIED>
+	<!ATTLIST square area CDATA #FIXED "100">
+	<!ATTLIST square shape (circle|square) "square">
+	<!ENTITY copyright "copyright phpStudy.net">
+]>
+<note>
+	<square width="100" area="100" shape="circle">
+		&copyright;
+	</square>
+</note>
