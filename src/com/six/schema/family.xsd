@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	
+	<!-- 
+	
+	<xsd:schema xmlns:xsd=”http://www.w3.org/XML_Schema”
+		targetNamespace=“http://www.test.com/ns/ns_test“>
+   		// Schema的目标名称空间用属性targetNamespace在根元素上定义。
+   		//Schema的全局成分被放在名称空间http://www.test.com/ns/ns_test里。
+	Schema中的全局成分
+     	全局成分指的是元素xsd:schema的直接子节点，包括元素声明、属性声明、复杂/简单类型定义、组定义、属性组定义。
+	Schema中的非全局成分
+     	有时希望将非全局成分定义在目标空间中去，可使用下面方法。
+	 	属性elementFormDefault的默认值是unqualified，也就是规定了只有全局成分才被定义在目标名称空间中。
+		 将elementFormDefault的值赋为qualified，使得目标名称空间包含非全局的元素定义。
+	
+	targetNamespace
+	
+	 -->
+    <element name="persons">
+    	<complexType>
+    		<sequence >
+    			<element name="person" maxOccurs="unbounded">
+    				<complexType>
+    					<sequence>
+    						<element name="full_name" type="string"/>
+    						<element name="child_name" type="string" minOccurs="0" maxOccurs="5"/>
+    					</sequence>
+    				</complexType>
+    			</element>
+    		</sequence>
+    	</complexType>
+    </element>
+</schema>
