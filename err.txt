@@ -1,0 +1,16 @@
+[解析开始时间 D:\workspaces\java\src\com\six\compile\Target.java]
+[解析已完成时间 15ms]
+[源文件的搜索路径： D:\workspaces\java\bin]
+[类文件的搜索路径： D:\Program Files\Java\jdk1.6.0_43\jre\lib\resources.jar,D:\Program Files\Java\jdk1.6.0_43\jre\lib\rt.jar,D:\Program Files\Java\jdk1.6.0_43\jre\lib\sunrsasign.jar,D:\Program Files\Java\jdk1.6.0_43\jre\lib\jsse.jar,D:\Program Files\Java\jdk1.6.0_43\jre\lib\jce.jar,D:\Program Files\Java\jdk1.6.0_43\jre\lib\charsets.jar,D:\Program Files\Java\jdk1.6.0_43\jre\lib\modules\jdk.boot.jar,D:\Program Files\Java\jdk1.6.0_43\jre\classes,D:\Program Files\Java\jdk1.6.0_43\jre\lib\ext\dnsns.jar,D:\Program Files\Java\jdk1.6.0_43\jre\lib\ext\localedata.jar,D:\Program Files\Java\jdk1.6.0_43\jre\lib\ext\sunjce_provider.jar,D:\Program Files\Java\jdk1.6.0_43\jre\lib\ext\sunmscapi.jar,D:\workspaces\java\bin]
+[正在装入 java\util\Date.class(java\util:Date.class)]
+[正在装入 java\lang\Object.class(java\lang:Object.class)]
+[正在检查 com.six.compile.Target]
+[正在装入 java\lang\String.class(java\lang:String.class)]
+[正在装入 java\lang\System.class(java\lang:System.class)]
+[正在装入 java\io\PrintStream.class(java\io:PrintStream.class)]
+[正在装入 java\io\FilterOutputStream.class(java\io:FilterOutputStream.class)]
+[正在装入 java\io\OutputStream.class(java\io:OutputStream.class)]
+[已写入 D:\workspaces\java\src\com\six\compile\Target.class]
+[总时间 257ms]
+注意：D:\workspaces\java\src\com\six\compile\Target.java 使用或覆盖了已过时的 API。
+注意：要了解详细信息，请使用 -Xlint:deprecation 重新编译。
