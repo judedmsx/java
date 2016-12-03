@@ -10,8 +10,8 @@ public class TestMap {
 		map.put("v1af", "vaf");
 		map.put("k5gj", "kgj");
 		
-		for(String key : map.keySet()){
+		/*for(String key : map.keySet()){
 			System.out.println(key);
-		}
+		}*/
 	}
 }
