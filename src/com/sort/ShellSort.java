@@ -16,7 +16,7 @@ public class ShellSort {
 				}
 				printAll(array);
 				gap = gap/2;
-			}
+			} 
 		}
 		return array;
 	}
@@ -30,6 +30,5 @@ public class ShellSort {
 	
 	public static void main(String[] args) {
 		sort(new int[]{9,1,2,5,7,4,8,6,3,5});
-		
 	}
 }
