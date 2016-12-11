@@ -18,9 +18,25 @@ public class InsertSort {
 		return array;
 	}
 	
+	public static int[] sort2(int[] array){
+		if(array.length > 0){
+			int k,temp;
+			for(int i = 1;i < array.length;i++){
+				k = i - 1;
+				temp = array[k+1];
+				while(k >= 0 && array[k] < temp){
+					array[k+1] = array[k];
+					k--;
+				}
+				array[k+1] = temp;
+			}
+		}
+		return array;
+	}
+	
 	
 	public static void main(String[] args) {
-		for(int a :sort(new int[]{29,11,9,45,12,85})){
+		for(int a :sort2(new int[]{29,11,9,45,12,85})){
 			System.out.println(a);
 		}
 	}
