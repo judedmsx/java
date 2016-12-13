@@ -4,8 +4,11 @@ public class RecursiveMergeSort {
 	
 	public static void main(String[] args) {  
         int[] data = new int[] { 5, 3, 6, 2, 1, 9, 4, 8, 7 };  
-        print(data);  
-        sort(data);  
+        print(data,"init");  
+//        sort(data);  
+        mergeSort_insert(data, 0, data.length-1, 3);
+        
+        
     }  
 	
 	
@@ -46,7 +49,7 @@ public class RecursiveMergeSort {
 			array[tmp]=temp[tmp++];
 		}
 		
-		print(array);
+		print(array,"merge");
 	}
 	
 	/**
@@ -71,7 +74,35 @@ public class RecursiveMergeSort {
 		merge(array,left,center,right);
 	}
 	
-	public static void print(int[] data) {  
+	
+	public static void mergeSort_insert(int []array,int left,int right,int k){
+		if(left >= right)
+			return;
+		int center = (left+right)/2;
+		if(right-left+1>k){
+			mergeSort_insert(array,left,center,k);
+			mergeSort_insert(array,center+1,right,k);
+			merge(array, left,center,right);
+		}else{
+			insert_sort(array,left,right);
+			print(array,"insert"); 
+		}
+	}
+	
+	public static void insert_sort(int []array,int left,int right){
+		for(int i=left+1 ;i<=right;i++){
+			int temp=array[i];
+			int j=i-1;
+			while(j>=left && array[j]>array[i]){
+				array[i] = array[j];
+				j--;
+			}
+			array[++j] = temp;
+		}
+	}
+	
+	public static void print(int[] data,String type) {
+		System.out.print(type+"\t");
         for (int i = 0; i < data.length; i++) {  
             System.out.print(data[i] + "\t");  
         }  
