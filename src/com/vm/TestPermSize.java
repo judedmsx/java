@@ -4,8 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TestPermSize {
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		ClassLoader cl = new MyClassLoader("/Users/maosx/Documents/workspace/java/bin");
+		Class c = cl.loadClass("com.vm.TestPermSize");
+		Object obj = c.newInstance();
+		System.out.println(obj instanceof com.vm.TestPermSize);
 	}
 	
 	public static void method1(){
