@@ -6,4 +6,8 @@ public abstract class TestFinal {
 	public TestFinal(){
 		a = "";
 	}
+	
+	public static void main(String[] args) {
+		FinalExample.writer();
+	}
 }
