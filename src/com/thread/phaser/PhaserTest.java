@@ -4,10 +4,10 @@ import java.util.concurrent.Phaser;
 
 import com.thread.SleepUtils;
 /**
- * CyclicBarrier，允许一组线程互相等待，直到到达某个公共屏障点。它提供的await()可以实现让所有参与者在临界点到来之前一直处于等待状态。
- * CountDownLatch，在完成一组正在其他线程中执行的操作之前，它允许一个或多个线程一直等待。它提供了await()、countDown()两个方法来进行操作。
+ * CyclicBarrier，允许一组线程互相等待，直到到达某个公共屏障点。它提供的await()可以实现让所有参与者在临界点到来之前一直处于等待状态。</p>
+ * CountDownLatch，在完成一组正在其他线程中执行的操作之前，它允许一个或多个线程一直等待。它提供了await()、countDown()两个方法来进行操作。</p>
  * 在Phaser中，它把多个线程协作执行的任务划分为多个阶段，编程时需要明确各个阶段的任务，每个阶段都可以有任意个参与者，线程都可以随时注册并参与到某个阶段。
- * </br>
+ * </p>
  * 同cyclicbarrier，最后一个线程调用arriveAndAwaitAdvance()唤醒所有等待的线程并继续执行任务。
  * @author maosx
  *
