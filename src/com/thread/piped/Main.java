@@ -6,13 +6,14 @@ import java.io.PipedOutputStream;
 
 public class Main {
 	public static void main(String[] args) throws IOException {
-		PipedOutputStream pos = new PipedOutputStream();
-		PipedInputStream pis = new PipedInputStream(pos);
-		
-		Thread read = new Thread(new Read(pis));
-		Thread write = new Thread(new Write(pos));
-		
-		write.start();
-		read.start();
+//		PipedOutputStream pos = new PipedOutputStream();
+//		PipedInputStream pis = new PipedInputStream(pos);
+//		
+//		Thread read = new Thread(new Read(pis));
+//		Thread write = new Thread(new Write(pos));
+//		
+//		write.start();
+//		read.start();
+		System.out.println(Character.digit('c', 16));
 	}
 }
