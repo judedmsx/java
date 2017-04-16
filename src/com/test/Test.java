@@ -1,12 +1,27 @@
 package com.test;
 
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
+
 public class Test {
 	public static void main(String[] args) {
 		/*int x = test();
 		System.out.println("main === "+x);*/
 		testRenMinBi(12345);
+		Object []array = new Long[1];
+		array[0]="i am maosx.";
+		
+		Set<Integer> integers = new HashSet<>();
+		Set<Double> doubles = new HashSet<>();
+		Test.<Number>union(integers, doubles);
 		
 	}
+	
+	
+	public static <E> Set<E> union(Set<? extends E> src,Set<? extends E> dest){
+		return null;
+	} 
 	
 	public static int test(){
 		int x=1;
