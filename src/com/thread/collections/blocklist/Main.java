@@ -18,7 +18,7 @@ public class Main {
 	public static void main(String[] args) {
 		LinkedBlockingDeque<String> list = new LinkedBlockingDeque<>(3);
 		
-		Client client = new Client(list);
+		/*Client client = new Client(list);
 		Thread thread = new Thread(client);
 		thread.start();
 		
@@ -32,6 +32,19 @@ public class Main {
 			}
 		} catch (InterruptedException e) {
 			e.printStackTrace();
+		}*/
+		boolean full = false;
+		try {
+			list.add("1");
+			list.add("2");
+			list.add("3");
+			full = list.add("4");
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		
+		System.out.println(full);
 	}
 }

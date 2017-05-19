@@ -39,7 +39,6 @@ public enum Elvis1 {
 			Elvis1 elvis11 = (Elvis1)cons.newInstance();
 			System.out.println(elvis11 == Elvis1.INSTANCE);
 		}*/
-		
 		//解决反序列化问题,多次序列化 是同一个对象
 		 FileOutputStream fout=new FileOutputStream("student.txt");
 		 ObjectOutputStream oos  =new ObjectOutputStream(fout);

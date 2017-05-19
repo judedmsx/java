@@ -1,21 +1,40 @@
 package com.test;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
 public class Test {
+	String str = new String("good");
+	char []ch = {'a','b','c'};
 	public static void main(String[] args) {
 		/*int x = test();
 		System.out.println("main === "+x);*/
-		testRenMinBi(12345);
+		/*testRenMinBi(12345);
 		Object []array = new Long[1];
 		array[0]="i am maosx.";
 		
 		Set<Integer> integers = new HashSet<>();
 		Set<Double> doubles = new HashSet<>();
-		Test.<Number>union(integers, doubles);
+		Test.<Number>union(integers, doubles);*/
+		String s1 = "hello";
+		String s2 = "he"+new String("llo");
+		System.out.println(s1==s2);
 		
+		
+		
+		
+		Test test = new Test();
+		test.change(test.str, test.ch);
+		System.out.println(test.str+" and ");
+		System.out.println(test.ch);
+	}
+	
+	public void change(String str,char ch[]){
+		str = "test ok";
+		ch[0] = 'g';
 	}
 	
 	
